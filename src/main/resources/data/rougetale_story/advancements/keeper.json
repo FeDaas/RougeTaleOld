@@ -1,0 +1,42 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass_bottle"
+        },
+        "title": {
+            "translate": "The bar at the end of the world"
+        },
+        "description": {
+            "translate": "A friendly barkeeper offers you drinks that make you more healthy. The price? Souls shaped to Coin. Sounds like a good deal you wont regret later"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "crafting_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:book"
+                        ],
+                        "count": {
+                            "min": 5,
+                            "max": 5
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "crafting_table"
+        ]
+    ],
+    "parent": "rougetale_story:root"
+}

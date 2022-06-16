@@ -1,0 +1,42 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "title": {
+            "translate": "The Lady of the Lake"
+        },
+        "description": {
+            "translate": "You fell into her Lake. Now she wants you to bring her diamond as payment for the items she claims to be yours"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "crafting_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:book"
+                        ],
+                        "count": {
+                            "min": 3,
+                            "max": 3
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "crafting_table"
+        ]
+    ],
+    "parent": "rougetale_story:root"
+}

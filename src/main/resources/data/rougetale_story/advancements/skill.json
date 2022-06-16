@@ -1,0 +1,42 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dark_oak_sapling"
+        },
+        "title": {
+            "translate": "The Tree with Power"
+        },
+        "description": {
+            "translate": "A tree guides you to grater possibilities. 'Look out for clerics, they may have somethink usefull' it said"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "crafting_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:book"
+                        ],
+                        "count": {
+                            "min": 4,
+                            "max": 4
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "crafting_table"
+        ]
+    ],
+    "parent": "rougetale_story:root"
+}

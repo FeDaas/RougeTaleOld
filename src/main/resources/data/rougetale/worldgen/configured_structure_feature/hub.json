@@ -1,0 +1,9 @@
+{
+  "config": {
+    "start_pool": "rougetale:hub",
+    "size": 7
+  },
+  "type": "minecraft:village",
+  "spawn_overrides": {},
+  "biomes": "minecraft:desert"
+}

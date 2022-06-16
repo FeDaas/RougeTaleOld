@@ -1,0 +1,42 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_crystal"
+        },
+        "title": {
+            "translate": "The voice in the Void"
+        },
+        "description": {
+            "translate": "The voice didn't seem to happy with your performance. You don't now what you've done wrong but maybe it gets a bit more specific later"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "crafting_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:book"
+                        ],
+                        "count": {
+                            "min": 6,
+                            "max": 6
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "crafting_table"
+        ]
+    ],
+    "parent": "rougetale_story:root"
+}
